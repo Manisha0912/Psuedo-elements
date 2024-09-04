@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Restaurant Menu</title>
+    <style>
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.menu-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 320px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.menu-title {
+    font-size: 28px;
+    color: #d84315; /* Warm orange color */
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.menu-title::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: #d84315;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    font-size: 18px;
+    color: #555;
+}
+
+.menu-item::before {
+    content: "•";
+    color: #d84315;
+    font-size: 24px;
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-item::after {
+    content: attr(data-price);
+    float: right;
+    color: #d84315;
+    font-weight: bold;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+    </style>
+</head>
+<body>
+    <div class="menu-card">
+        <h1 class="menu-title">Spice Paradise</h1>
+        <ul class="menu-list">
+          <h1>Veg Menu</h1>
+          <li>Veg Biryani</li>
+          <li>Veg Fried Rice</li>
+          <li>Veg noodles</li>
+          <li>veg Manchuriya</li>
+          
+      </ul>
+      <br>
+      <ul class="menu-list">
+          <h1>Non Veg</h1>
+          <li>Chicken Biryani</li>
+          <li>Mutton Biryani</li>
+          <li>Egg Briyani</li>
+          <li>Chicken Noodles</li>
+          
+      </ul>
+      <br>
+      <ul class="menu-list">
+          <h1>Starters</h1>
+          <li>Chicken Majestic</li>
+          <li>Chicken nudgets</li>
+          <li>Pepper chicken</li>
+          <li>Chicken lollipop</li>
+      </ul>
+    </div>
+</body>
+</html>
